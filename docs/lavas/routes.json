@@ -1,0 +1,42 @@
+{
+    "mode": "history",
+    "base": "/",
+    "routes": [
+        {
+            "path": "/appshell",
+            "name": "appshell",
+            "meta": {}
+        },
+        {
+            "path": "/detail/:id",
+            "name": "detailId",
+            "meta": {}
+        },
+        {
+            "path": "/fuli",
+            "name": "fuli",
+            "meta": {}
+        },
+        {
+            "path": "/",
+            "name": "index",
+            "meta": {}
+        },
+        {
+            "path": "/intro",
+            "name": "intro",
+            "meta": {}
+        },
+        {
+            "path": "/search",
+            "name": "search",
+            "meta": {}
+        },
+        {
+            "path": "/error",
+            "name": "error",
+            "meta": {},
+            "alias": "*"
+        }
+    ]
+}
