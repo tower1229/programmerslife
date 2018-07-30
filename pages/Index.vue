@@ -2,10 +2,10 @@
     <div>
         <div class="content">
             <div>
-                <h2>LAVAS</h2>
-                <h4>[ˈlɑ:vəz]</h4>
+                <h2>看风景</h2>
+                <h4>探寻程序员们的生活琐事</h4>
                 <router-link to="/intro">
-                    <v-btn color="success">intro</v-btn>
+                    <v-btn color="success">Readme</v-btn>
                 </router-link>
             </div>
         </div>
@@ -33,8 +33,8 @@ function setState(store) {
 export default {
     name: 'index',
     metaInfo: {
-        title: 'Home',
-        titleTemplate: '%s - Lavas',
+        title: '微站',
+        titleTemplate: '%s - 看风景',
         meta: [
             {name: 'keywords', content: 'lavas PWA'},
             {name: 'description', content: '基于 Vue 的 PWA 解决方案，帮助开发者快速搭建 PWA 应用，解决接入 PWA 的各种问题'}

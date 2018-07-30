@@ -1,8 +1,9 @@
 <template>
     <div>
         <div class="content">
-            <div v-for="(item, index) in list" :key="index">
-                
+            <div>
+                <p>准备了一些好东西，如果你看不到，就太可惜了，扫码关注：programmerslife，探寻程序员们的生活琐事</p>
+                <img src="https://refined-x.com/asset/wechat.jpg" alt="">
             </div>
         </div>
     </div>

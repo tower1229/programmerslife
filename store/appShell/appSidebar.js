@@ -30,23 +30,12 @@ export const state = () => {
         blocks: [
             {
                 // 子列表1
-                sublistTitle: 'Sublist1',
+                sublistTitle: '福利',
                 list: [
                     {
-                        text: 'Detail Page 1',
+                        text: '妹子十二',
                         icon: 'sentiment_satisfied',
-                        route: '/detail/1'
-                    },
-                    {
-                        text: 'Detail Page 2',
-                        image: 'https://github.com/google/material-design-icons/blob/master/social/2x_web/ic_mood_bad_black_48dp.png?raw=true',
-                        alt: 'mood-bad',
-                        route: '/detail/2'
-                    },
-                    {
-                        text: 'Detail Page 3',
-                        icon: 'sentiment_neutral',
-                        route: '/detail/3'
+                        route: '/fuli'
                     }
                 ]
             }

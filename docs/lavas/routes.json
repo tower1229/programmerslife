@@ -18,6 +18,11 @@
             "meta": {}
         },
         {
+            "path": "/fuli-detail",
+            "name": "fuliDetail",
+            "meta": {}
+        },
+        {
             "path": "/",
             "name": "index",
             "meta": {}
