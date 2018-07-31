@@ -17,7 +17,6 @@ import {mapActions} from 'vuex';
 function setState(store) {
     store.dispatch('appShell/appHeader/setAppHeader', {
         show: true,
-        title: 'Lavas',
         showMenu: true,
         showBack: false,
         showLogo: false,
@@ -34,11 +33,7 @@ export default {
     name: 'index',
     metaInfo: {
         title: '微站',
-        titleTemplate: '%s - 看风景',
-        meta: [
-            {name: 'keywords', content: 'lavas PWA'},
-            {name: 'description', content: '基于 Vue 的 PWA 解决方案，帮助开发者快速搭建 PWA 应用，解决接入 PWA 的各种问题'}
-        ]
+        titleTemplate: '%s - 看风景'
     },
     middleware: ["login-client"],
     async asyncData({store, route}) {

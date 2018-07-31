@@ -1,7 +1,7 @@
 {
     "start_url": "/?utm_source=homescreen",
-    "name": "pwa-project",
-    "short_name": "pwa-project",
+    "name": "看风景",
+    "short_name": "看风景",
     "icons": [
         {
             "src": "img/icons/android-chrome-512x512.png",

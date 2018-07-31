@@ -19,7 +19,7 @@ export const state = () => {
          *
          * @type {string}
          */
-        title: 'Lavas',
+        title: '看风景',
 
         /**
          * logo图标
