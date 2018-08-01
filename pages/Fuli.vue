@@ -52,9 +52,9 @@ export default {
                     let imgList = [];
                     response.forEach(function(e){
                         let content = decodeURI(e.content);
-                        let src = content.match(/<img src="([^"]+)"/);
-                        if(src){
-                            imgList.push(src[1]);
+                        let srcs = content.match(/src="([^"]+)"/);
+                        if(srcs){
+                            imgList.push(srcs[1]);
                         }
                     });
                     this.list = this.list.concat(imgList);
