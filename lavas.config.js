@@ -44,7 +44,7 @@ module.exports = {
         vendor: ['axios']
     },
     router: {
-        mode: 'history',
+        mode: 'hash',
         base: '/',
         pageTransition: {
             type: 'slide',
