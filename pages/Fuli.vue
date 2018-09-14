@@ -51,7 +51,7 @@ export default {
                 if(Array.isArray(response)){
                     let imgList = [];
                     response.forEach(function(e){
-                        let content = decodeURI(e.content);
+                        let content = e.content;
                         let srcs = content.match(/src="([^"]+)"/);
                         if(srcs){
                             imgList.push(srcs[1]);
