@@ -29,5 +29,5 @@ export default {
 </script>
 
 <style scoped>
-.detail-wrapper{overflow:scroll;}
+.detail-wrapper img{width:100%;}
 </style>
