@@ -13,10 +13,6 @@
 import {mapActions} from 'vuex';
 import axios from 'axios';
 
-function setState(store) {
-    store.dispatch('common/setLogin', true);
-}
-
 export default {
     name: 'meizi',
     metaInfo: {

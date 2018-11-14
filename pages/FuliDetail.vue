@@ -1,6 +1,8 @@
 <template>
-    <div class="detail-wrapper" v-if="url">
-        <img :src="url" />
+    <div>
+        <div class="detail-wrapper" v-if="url">
+            <img :src="url" />
+        </div>
     </div>
 </template>
 
@@ -19,15 +21,17 @@ export default {
             url: null
         }
     },
-    activated() {
-        
-    },
     created() {
-        this.url = this.$route.params.url
+        this.url = this.$route.query.url
+        this.$store.dispatch('appShell/appHeader/setAppHeader', {
+            show: false
+        })
     },
 };
 </script>
 
 <style scoped>
+
+.detail-wrapper{height: 100%;background: #fff;}
 .detail-wrapper img{width:100%;}
 </style>

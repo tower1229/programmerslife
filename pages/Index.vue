@@ -2,11 +2,17 @@
     <div>
         <div class="content">
             <div>
-                <h2>看风景</h2>
-                <h4>探寻程序员们的生活琐事</h4>
-                <router-link to="/intro">
-                    <v-btn color="success">Readme</v-btn>
-                </router-link>
+                <v-card>
+                    <v-card-title primary-title>
+                        <div>
+                            <h2 class="headline">看风景</h2>
+                            <div>
+                                Author: <a href="mailto:admin@refined-x.com">admin@refined-x.com</a>
+                            </div>
+                        </div>
+                    </v-card-title>
+                    
+                </v-card>
             </div>
         </div>
     </div>
@@ -14,20 +20,6 @@
 
 <script>
 import {mapActions} from 'vuex';
-function setState(store) {
-    store.dispatch('appShell/appHeader/setAppHeader', {
-        show: true,
-        showMenu: true,
-        showBack: false,
-        showLogo: false,
-        actions: [
-            {
-                icon: 'search',
-                route: '/search'
-            }
-        ]
-    });
-}
 
 export default {
     name: 'index',
@@ -36,10 +28,18 @@ export default {
     },
     middleware: ["login-client"],
     async asyncData({store, route}) {
-        setState(store);
-    },
-    activated() {
-        setState(this.$store);
+        store.dispatch('appShell/appHeader/setAppHeader', {
+            show: true,
+            showMenu: true,
+            showBack: false,
+            showLogo: false,
+            actions: [
+                // {
+                //     icon: 'search',
+                //     route: '/search'
+                // }
+            ]
+        });
     }
 };
 </script>
@@ -51,7 +51,5 @@ export default {
     justify-content center
     height 100%
     flex-wrap wrap
-    h2
-        font-size 46px
-        font-weight 500
+    
 </style>

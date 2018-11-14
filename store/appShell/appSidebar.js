@@ -29,12 +29,33 @@ export const state = () => {
         // 分块组
         blocks: [
             {
-                // 子列表1
+                sublistTitle: '前端工程师',
+                list: [
+                    {
+                        text: '雅X共赏',
+                        icon: 'create',
+                        url: 'https://refined-x.com/'
+                    }, {
+                        text: '前端周刊',
+                        icon: 'bookmarks',
+                        url: 'https://frontend-weekly.com/'
+                    }, {
+                        text: '知识星球',
+                        icon: 'monetization_on',
+                        url: 'https://wx.zsxq.com/dweb/#/index/8452545882'
+                    }, {
+                        text: '公众号',
+                        icon: 'camera',
+                        route: '/intro'
+                    }
+                ]
+            },
+            {
                 sublistTitle: '福利',
                 list: [
                     {
                         text: '妹子十二',
-                        icon: 'sentiment_satisfied',
+                        icon: 'volume_off',
                         route: '/fuli'
                     }
                 ]

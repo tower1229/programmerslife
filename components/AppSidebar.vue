@@ -39,7 +39,7 @@
                     <li v-for="(block, index) in blocks" :key="index" class="app-sidebar-block">
                         <div v-if="block.sublistTitle" class="sub-list-title">{{ block.sublistTitle }}</div>
                         <ul v-if="block.list">
-                            <li v-for="item in block.list" :key="item.text" @click.stop="closeAndGo(item.route)">
+                            <li v-for="item in block.list" :key="item.text" @click.stop="closeAndGo(item)">
                                 <span v-if="item.icon || item.image" class="app-sidebar-block-left-icon">
                                     <img v-if="item.image" :src="item.image" :alt="item.alt"></img>
                                     <v-icon v-else-if="item.icon">{{ item.icon }}</v-icon>
@@ -91,9 +91,13 @@ export default {
         close() {
             this.sidebarStatus = false;
         },
-        closeAndGo(route) {
-            this.$router.push(route);
-            this.close();
+        closeAndGo(item) {
+            if(item.route){
+                this.$router.push(item.route);
+                this.close();
+            }else if(item.url){
+                window.open(item.url)
+            }
         }
     }
 };
@@ -133,6 +137,7 @@ a
 
         .material-icons
             font-size ($app-sidebar-left-icon-size)px
+            vertical-align middle
 
     .app-sidebar-block-text
         display inline-block
