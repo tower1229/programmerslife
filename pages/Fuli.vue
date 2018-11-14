@@ -1,5 +1,5 @@
 <template>
-    <div style="width:100%;overflow:hidden">
+    <div class="white_wrap">
         <div class="toggle" @click="changeClass">切</div>
         <div class="content" :class="{size1: classIndex==1,size2: classIndex==2,size3: classIndex==3}">
             <div class="items" v-for="(item, index) in list" :key="index" @click="$router.push({name:'fuliDetail', params: {url: item}})">

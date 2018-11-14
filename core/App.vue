@@ -166,7 +166,7 @@ $page-transition-duration = 0.35s
     text-align center
     color #2c3e50
     height 100%
-
+    background:url('http://host.refined-x.com/bing.php') center no-repeat /cover
     .application--wrap
         height 100%
         min-height 100%
@@ -184,7 +184,6 @@ $page-transition-duration = 0.35s
         bottom 0
         left 0
         -webkit-overflow-scrolling touch
-        background white
 
         &::-webkit-scrollbar
             width 0

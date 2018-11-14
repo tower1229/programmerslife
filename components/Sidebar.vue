@@ -362,6 +362,7 @@ function clientHeight() {
         background #fff
         height 0
         top 0
+        opacity : .9
 
     .touch-toggle
         position fixed

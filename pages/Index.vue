@@ -32,8 +32,7 @@ function setState(store) {
 export default {
     name: 'index',
     metaInfo: {
-        title: '微站',
-        titleTemplate: '%s - 看风景'
+        title: '看风景'
     },
     middleware: ["login-client"],
     async asyncData({store, route}) {

@@ -158,6 +158,7 @@ a
         line-height $app-sidebar-title-height
         background: $colorPrimaryBlue
         text-align left
+        background: url(http://refined-x.com/asset/wechat_logo.png) center no-repeat /106% auto #ff5c76
 
     .app-sidebar-user
         padding 0 10px

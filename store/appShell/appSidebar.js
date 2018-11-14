@@ -14,7 +14,7 @@ export const state = () => {
             imageLeft: '',
             altLeft: '',
             iconLeft: 'home',
-            text: 'Home',
+            text: '看风景',
             imageRight: '',
             altRight: '',
             iconRight: ''

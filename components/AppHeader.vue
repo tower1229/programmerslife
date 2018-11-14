@@ -23,7 +23,7 @@
             </div>
             <div class="app-header-middle" v-cloak>
                 <slot name="title">
-                    {{ title }}
+                    程序员们的生活琐事
                 </slot>
             </div>
             <div class="app-header-right">
@@ -107,7 +107,6 @@ $btn-color = #fff
     justify-content space-between
     align-items center
     height $app-header-height
-    background $colorPrimaryBlue
     color $btn-color
     padding 0
     box-shadow 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px rgba(0,0,0,.14), 0 1px 10px rgba(0,0,0,.12)
