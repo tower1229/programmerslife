@@ -1,5 +1,5 @@
 <template>
-    <div id="main">
+    <div id="app">
         <v-app>
             <app-header
                 class="app-shell-header"
@@ -159,8 +159,7 @@ export default {
 
 $page-transition-duration = 0.35s
 
-
-#main
+#app
     font-family 'Avenir', Helvetica, Arial, sans-serif
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
@@ -171,6 +170,7 @@ $page-transition-duration = 0.35s
     .application--wrap
         height 100%
         min-height 100%
+        background:url('http://host.refined-x.com/bing.php') center no-repeat /cover
 
     .app-shell-header
         position fixed
