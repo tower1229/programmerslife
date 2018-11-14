@@ -7,7 +7,7 @@
                         <div>
                             <h2 class="headline">看风景</h2>
                             <div>
-                                Author: <a href="mailto:admin@refined-x.com">admin@refined-x.com</a>
+                                Author: <a href="mailto:tower1229@foxmail.com">tower1229@foxmail.com</a>
                             </div>
                         </div>
                     </v-card-title>
