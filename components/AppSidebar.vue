@@ -8,13 +8,13 @@
             <!-- 头部 -->
             <div v-if="title" class="app-sidebar-title" @click.stop="closeAndGo({route: '/'})">
                 <span class="app-sidebar-title-left-icon">
-                    <img v-if="title.imageLeft" :src="title.imageLeft" :alt="title.altLeft"></img>
+                    <img v-if="title.imageLeft" :src="title.imageLeft" :alt="title.altLeft" />
                     <v-icon color="white" v-else-if="title.iconLeft">{{ title.iconLeft }}</v-icon>
                 </span>
                 <span>{{ title.text }}</span>
                 <slot name="logo" class="app-sidebar-title-right-logo">
                     <span class="app-sidebar-title-right-logo">
-                        <img v-if="title.imageRight" :src="title.imageRight" :alt="title.altRight"></img>
+                        <img v-if="title.imageRight" :src="title.imageRight" :alt="title.altRight" />
                         <v-icon v-else-if="title.iconRight">{{ title.iconRight }}</v-icon>
                     </span>
                 </slot>
@@ -41,7 +41,7 @@
                         <ul v-if="block.list">
                             <li v-for="item in block.list" :key="item.text" @click.stop="closeAndGo(item)">
                                 <span v-if="item.icon || item.image" class="app-sidebar-block-left-icon">
-                                    <img v-if="item.image" :src="item.image" :alt="item.alt"></img>
+                                    <img v-if="item.image" :src="item.image" :alt="item.alt" />
                                     <v-icon v-else-if="item.icon">{{ item.icon }}</v-icon>
                                 </span>
                                 <span v-if="item.text" class="app-sidebar-block-text">{{ item.text }}</span>
