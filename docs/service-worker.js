@@ -1,4 +1,11 @@
-/**
+importScripts("/precache-manifest.ab5a362ea547c15ac879d00e8e7fa333.js");
+
+
+        importScripts('/static/workbox-v3.6.3/workbox-sw.js');
+        workbox.setConfig({
+            modulePathPrefix: '/static/workbox-v3.6.3/'
+        });
+    /**
  * @file service-worker.js with workbox api
  * @desc [example](https://workbox-samples.glitch.me/examples/workbox-sw/)
  * @author *__ author __*{% if: *__ email __* %}(*__ email __*){% /if %}
@@ -42,4 +49,4 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 //             })
 //         ]
 //     })
-// );
+// );workbox.routing.registerNavigationRoute('/index.html');
