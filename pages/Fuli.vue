@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="white_wrap">
-        <template v-if="loading">
+        <template v-if="!gank.length">
         <v-progress-circular
         style="margin-top:10rem"
         :size="70"
@@ -11,7 +11,7 @@
         <template v-else>
         <div class="toggle" @click="changeClass">切</div>
         <div class="content" :class="{size1: classIndex==1,size2: classIndex==2,size3: classIndex==3}">
-            <div class="items" v-for="(item, index) in list" :key="index" @click="$router.push({name:'fuliDetail', query: {url: item}})">
+            <div class="items" v-for="(item, index) in gank" :key="index" @click="$router.push({name:'fuliDetail', query: {url: item}})">
                 <div class="rect-100">
                     <div class="_full">
                         <img :src="item" />
@@ -25,8 +25,7 @@
 </template>
 
 <script>
-import {mapActions} from 'vuex';
-import axios from 'axios';
+import {mapState} from 'vuex';
 
 export default {
     name: 'meizi',
@@ -40,10 +39,16 @@ export default {
     },
     data() {
         return {
-            loading: false,
-            list: [],
             classIndex: 1
         }
+    },
+    computed: {
+        ...mapState('common', [
+            'gank'
+        ])
+    },
+    async asyncData({store, route}) {
+        store.dispatch('common/getGank');
     },
     methods: {
         changeClass: function(){
@@ -52,29 +57,9 @@ export default {
             }else{
                 this.classIndex = 1;
             }
-        },
-        fetchData: function(){
-            this.loading = true;
-            axios.get(`https://gank.io/api/history/content/12/1`).then(res => {
-                this.loading = false;
-                let response = res.data.results;
-                if(Array.isArray(response)){
-                    let imgList = [];
-                    response.forEach(function(e){
-                        let content = e.content;
-                        let srcs = content.match(/src="([^"]+)"/);
-                        if(srcs){
-                            imgList.push(srcs[1]);
-                        }
-                    });
-                    this.list = this.list.concat(imgList);
-                }
-            });
-            
         }
     },
     created: function(){
-        this.fetchData()
         this.$store.dispatch('appShell/appHeader/setAppHeader', {
             show: true
         })

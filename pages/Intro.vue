@@ -1,10 +1,21 @@
 <template>
     <div>
         <div class="content">
-            <div>
-                <p>准备了一些好东西，如果你看不到，就太可惜了，扫码关注：programmerslife，探寻程序员们的生活琐事</p>
-                <img src="https://refined-x.com/asset/wechat.jpg" alt="">
-            </div>
+            <v-card>
+                <v-img
+                src="https://refined-x.com/asset/wechat.jpg"
+                aspect-ratio="1"
+                ></v-img>
+
+                <v-card-title primary-title>
+                <div>
+ 
+                    <div>扫码关注programmerslife，准备了一些好东西，如果你看不到，就太可惜了</div>
+                </div>
+                </v-card-title>
+
+            </v-card>
+            
         </div>
     </div>
 </template>

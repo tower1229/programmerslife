@@ -1,32 +1,37 @@
 const SET_LOGIN = 'setLogin';
+import axios from 'axios';
 
 export const state = () => {
     return {
-        login: false
+        gank: []
     };
 };
 
 export const mutations = {
-    [SET_LOGIN](state, login) {
-        state.login = login;
+    setGank (state, array) {
+        state.gank = array;
     }
 };
 
 export const actions = {
-    setLogin({commit}, login) {
-        commit(SET_LOGIN, login);
-    },
-    // 该方法主要供服务端接口验证使用
-    async validLogin({commit}) {
-
-        // 可以给服务端发请求，验证用户的登录状态，此处模拟未登录
-        let login = await new Promise( resolve => {
-            setTimeout(() => {
-                resolve(false);
-            }, 1000);
-        });
-
-        // 并设置 store 中的登录状态
-        commit(SET_LOGIN, login);
+    // 获取福利图片
+    async getGank({commit, state}) {
+        console.log(state.gank.length)
+        if(!state.gank.length){
+            axios.get(`https://gank.io/api/history/content/12/1`).then(res => {
+                let response = res.data.results;
+                if(Array.isArray(response)){
+                    let imgList = [];
+                    response.forEach(function(e){
+                        let content = e.content;
+                        let srcs = content.match(/src="([^"]+)"/);
+                        if(srcs){
+                            imgList.push(srcs[1]);
+                        }
+                    });
+                    commit('setGank', imgList);
+                }
+            });
+        }
     }
 };
