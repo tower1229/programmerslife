@@ -29,6 +29,16 @@ export const state = () => {
         // 分块组
         blocks: [
             {
+                sublistTitle: '值得买',
+                list: [
+                    {
+                        text: '保险商城',
+                        icon: 'security',
+                        url: 'https://cps.qixin18.com/m/zt1029065/media-10453.html'
+                    }
+                ]
+            },
+            {
                 sublistTitle: '福利',
                 list: [
                     {
