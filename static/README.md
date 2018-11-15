@@ -1,2 +1,0 @@
-# programmerslife.github.io
-website
