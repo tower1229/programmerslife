@@ -8,7 +8,7 @@ export default {
         title: '看风景',
         meta: [
             {name: 'keywords', content: '看风景'},
-            {name: 'description', content: '探寻程序员们的生活琐事'}
+            {name: 'description', content: '探寻程序员的生活琐事'}
         ],
         bodyAttrs: {
             'empty-appshell': undefined

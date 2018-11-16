@@ -23,7 +23,7 @@
             </div>
             <div class="app-header-middle" v-cloak>
                 <slot name="title">
-                    程序员们的生活琐事
+                    程序员的生活琐事
                 </slot>
             </div>
             <div class="app-header-right">

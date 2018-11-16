@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/static/js/0.67b979ff.js"
   },
   {
-    "revision": "194616b944072072e295",
-    "url": "/static/js/index.194616b9.js"
+    "revision": "7ab9489b9d901e1ae20b",
+    "url": "/static/js/index.7ab9489b.js"
   },
   {
     "revision": "b9b2b4188e9847a3502e6482d3f3d2c9",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/static/js/vendor.1b8f4b7a.js"
   },
   {
-    "revision": "eac3993afc33d21629311d494c42e67b",
-    "url": "/static/img/icons/apple-touch-icon-76x76.png"
+    "revision": "51201acfe8e128e8e72f057bc1d11251",
+    "url": "/static/img/icons/favicon-16x16.png"
   },
   {
     "revision": "a37b0c01c0baf1888ca812cc0508f6e2",
@@ -48,12 +48,12 @@ self.__precacheManifest = [
     "url": "/static/img/icons/android-chrome-512x512.png"
   },
   {
-    "revision": "14563e4b6a0d54cdec7fe7c159f63e93",
-    "url": "/static/img/icons/apple-touch-icon-180x180.png"
-  },
-  {
     "revision": "13ba3c681af7307d41196be92d9139e2",
     "url": "/static/img/icons/apple-touch-icon-152x152.png"
+  },
+  {
+    "revision": "14563e4b6a0d54cdec7fe7c159f63e93",
+    "url": "/static/img/icons/apple-touch-icon-180x180.png"
   },
   {
     "revision": "f94e3fd24fb4d545eec4b7c0c0b4b734",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/static/img/icons/favicon.ico"
   },
   {
-    "revision": "51201acfe8e128e8e72f057bc1d11251",
-    "url": "/static/img/icons/favicon-16x16.png"
+    "revision": "eac3993afc33d21629311d494c42e67b",
+    "url": "/static/img/icons/apple-touch-icon-76x76.png"
   },
   {
     "revision": "4035959c58ec2dae957a88d7480ad4dc",
@@ -80,11 +80,11 @@ self.__precacheManifest = [
     "url": "/static/fonts/MaterialIcons-Regular.012cf6a1.woff"
   },
   {
-    "revision": "194616b944072072e295",
-    "url": "/static/css/index.30c6ce69.css"
+    "revision": "7ab9489b9d901e1ae20b",
+    "url": "/static/css/index.1dc2ef48.css"
   },
   {
-    "revision": "07960d38b706a42154ff5063939f876e",
+    "revision": "6525db27a204551614b5ed8816c9253e",
     "url": "/index.html"
   },
   {
