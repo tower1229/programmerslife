@@ -2,26 +2,9 @@
     <div>
         <div class="content">
             <div class="tags">
-                <a class="_tag" href="https://refined-x.com/" target="_blank">
-                    <v-btn fab dark color="primary">
-                        <v-icon dark>create</v-icon>
-                    </v-btn>
+                <a href="http://host.refined-x.com/bing.php" download="bing-wallpaper" target="_blank">
+                    下载Bing壁纸
                 </a>
-                <a class="_tag" href="https://frontend-weekly.com/" target="_blank">
-                    <v-btn fab dark color="orange">
-                        <v-icon dark>book</v-icon>
-                    </v-btn>
-                </a>
-                <a class="_tag" href="https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=8452545882" target="_blank">
-                    <v-btn fab dark color="cyan">
-                        <v-icon dark>monetization_on</v-icon>
-                    </v-btn>
-                </a>
-                <router-link class="_tag" to="/intro">
-                    <v-btn fab dark color="light-green">
-                        <v-icon dark>camera</v-icon>
-                    </v-btn>
-                </router-link>
             </div>
         </div>
     </div>
@@ -64,7 +47,5 @@ export default {
     width 100%
     padding 1rem 0
     text-align center
-    ._tag
-        display inline-block
-        text-decoration none
+    
 </style>

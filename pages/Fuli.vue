@@ -11,12 +11,17 @@
         <template v-else>
         <div class="toggle" @click="changeClass">切</div>
         <div class="content" :class="{size1: classIndex==1,size2: classIndex==2,size3: classIndex==3}">
+            
             <div class="items" v-for="(item, index) in gank" :key="index" @click="$router.push({name:'fuliDetail', query: {url: item}})">
                 <div class="rect-100">
                     <div class="_full">
                         <img :src="item" />
                     </div>
                 </div>
+            </div>
+
+            <div class="tips">
+                内容抓取自“干货集中营”，妹子虽好，不要贪杯哦
             </div>
         </div>
         </template>
@@ -75,5 +80,5 @@ border-radius: 2em;}
 .content .items img{width:100%;}
 .content.size2 .items{width:48%;}
 .content.size3 .items{width:98%;}
-
+.content .tips{clear: left; padding:1em;}
 </style>

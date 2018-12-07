@@ -9,8 +9,7 @@
 
                 <v-card-title primary-title>
                 <div>
- 
-                    <div>扫码关注programmerslife，准备了一些好东西，如果你看不到，就太可惜了</div>
+                    <div>一个码农的技术、认知、生活、购物、理财相关集散地。</div>
                 </div>
                 </v-card-title>
 
