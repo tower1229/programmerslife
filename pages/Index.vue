@@ -2,7 +2,7 @@
     <div>
         <div class="content">
             <div class="tags">
-                <a href="http://host.refined-x.com/bing.php" download="bing-wallpaper" target="_blank">
+                <a href="http://host.refined-x.com/bing.php" download="bing-wallpaper.jpg" target="_blank">
                     下载Bing壁纸
                 </a>
             </div>
