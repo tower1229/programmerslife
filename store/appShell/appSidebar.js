@@ -42,7 +42,7 @@ export const state = () => {
                     }, {
                         text: '科学上网必备',
                         icon: 'network_check',
-                        url: 'https://portal.shadowsocks.nu/aff.php?aff=19825'
+                        url: 'https://secure.shadowsocks.nu/aff.php?aff=19825'
                     }
                 ]
             },
