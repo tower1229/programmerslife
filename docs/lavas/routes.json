@@ -8,6 +8,11 @@
             "meta": {}
         },
         {
+            "path": "/article/checkreal",
+            "name": "articleCheckreal",
+            "meta": {}
+        },
+        {
             "path": "/fuli",
             "name": "fuli",
             "meta": {}
