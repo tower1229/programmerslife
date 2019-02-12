@@ -32,13 +32,9 @@ export const state = () => {
                 sublistTitle: '值得买',
                 list: [
                     {
-                        text: '保险产品超市',
+                        text: '保险商城',
                         icon: 'security',
-                        url: 'https://cps.qixin18.com/m/zt1029065/media-10453.html'
-                    }, {
-                        text: '前端技术咨询',
-                        icon: 'monetization_on',
-                        url: 'https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=8452545882'
+                        url: 'https://cps.qixin18.com/zt1029065/'
                     }, {
                         text: '科学上网必备',
                         icon: 'network_check',
@@ -67,16 +63,10 @@ export const state = () => {
                         text: '前端周刊',
                         icon: 'book',
                         url: 'https://frontend-weekly.com/'
-                    }
-                ]
-            },
-            {
-                sublistTitle: '关于',
-                list: [
-                    {
-                        text: '公众号',
-                        icon: 'camera',
-                        route: '/intro'
+                    }, {
+                        text: '前端技术咨询',
+                        icon: 'monetization_on',
+                        url: 'https://wx.zsxq.com/mweb/views/joingroup/join_group.html?group_id=8452545882'
                     }
                 ]
             }

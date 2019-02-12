@@ -1,7 +1,7 @@
 {
     "name": "programmerslife",
     "version": "0.0.1",
-    "description": "看风景，探寻程序员的生活琐事",
+    "description": "看风景，一个程序员的技术、认知、生活、购物、理财相关集散地",
     "author": "tower1229 <tower1229@foxmail.com>",
     "private": true,
     "lavas": {

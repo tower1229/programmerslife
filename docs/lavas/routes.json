@@ -28,11 +28,6 @@
             "meta": {}
         },
         {
-            "path": "/intro",
-            "name": "intro",
-            "meta": {}
-        },
-        {
             "path": "/error",
             "name": "error",
             "meta": {},

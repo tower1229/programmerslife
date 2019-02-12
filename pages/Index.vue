@@ -1,6 +1,20 @@
 <template>
     <div>
         <div class="content">
+            <v-card>
+                <v-img
+                src="https://refined-x.com/asset/wechat.jpg"
+                aspect-ratio="1"
+                ></v-img>
+
+                <v-card-title primary-title>
+                <div>
+                    <div>一个程序员的技术、认知、生活、购物、理财相关集散地。</div>
+                </div>
+                </v-card-title>
+
+            </v-card>
+
             <div class="tags">
                 <a href="http://host.refined-x.com/bing.php" download="bing-wallpaper.jpg" target="_blank">
                     下载Bing壁纸
@@ -38,8 +52,11 @@ export default {
 
 <style lang="stylus" scoped>
 .content
-    position relative
+    display flex
+    align-items center
+    justify-content center
     height 100%
+    flex-wrap wrap
 .tags
     position absolute
     left 0
