@@ -36,9 +36,9 @@ export const state = () => {
                         icon: 'security',
                         url: 'https://cps.qixin18.com/zt1029065/'
                     }, {
-                        text: '科学上网必备',
+                        text: '上网工具',
                         icon: 'network_check',
-                        url: 'https://secure.shadowsocks.nu/aff.php?aff=19825'
+                        url: 'https://secure.shadowsocks.ch/aff.php?aff=19825'
                     }
                 ]
             },
