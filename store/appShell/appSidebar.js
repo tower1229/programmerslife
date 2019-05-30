@@ -38,7 +38,7 @@ export const state = () => {
                     }, {
                         text: '上网工具',
                         icon: 'network_check',
-                        url: 'https://secure.shadowsocks.ch/aff.php?aff=19825'
+                        url: 'https://home.shadowsocks.ch/aff.php?aff=19825'
                     }
                 ]
             },

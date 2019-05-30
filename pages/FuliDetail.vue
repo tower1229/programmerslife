@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="detail-wrapper" v-if="url">
-            <img :src="url" />
+            <img :src="url" referrerpolicy="no-referrer" />
         </div>
     </div>
 </template>

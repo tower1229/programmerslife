@@ -15,7 +15,7 @@
             <div class="items" v-for="(item, index) in gank" :key="index" @click="$router.push({name:'fuliDetail', query: {url: item}})">
                 <div class="rect-100">
                     <div class="_full">
-                        <img :src="item" />
+                        <img :src="item" referrerpolicy="no-referrer" />
                     </div>
                 </div>
             </div>
