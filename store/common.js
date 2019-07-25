@@ -18,15 +18,27 @@ export const actions = {
     async getGank({commit, state}) {
         console.log(state.gank.length)
         if(!state.gank.length){
-            axios.get(`https://gank.io/api/history/content/12/1`).then(res => {
+            // axios.get(`https://gank.io/api/history/content/24/1`).then(res => {
+            //     let response = res.data.results;
+            //     if(Array.isArray(response)){
+            //         let imgList = [];
+            //         response.forEach(function(e){
+            //             let content = e.content;
+            //             let srcs = content.match(/src="([^"]+)"/);
+            //             if(srcs){
+            //                 imgList.push(srcs[1]);
+            //             }
+            //         });
+            //         commit('setGank', imgList);
+            //     }
+            // });
+            axios.get(`http://gank.io/api/data/福利/24/1`).then(res => {
                 let response = res.data.results;
                 if(Array.isArray(response)){
                     let imgList = [];
                     response.forEach(function(e){
-                        let content = e.content;
-                        let srcs = content.match(/src="([^"]+)"/);
-                        if(srcs){
-                            imgList.push(srcs[1]);
+                        if(e.url){
+                            imgList.push(e.url);
                         }
                     });
                     commit('setGank', imgList);

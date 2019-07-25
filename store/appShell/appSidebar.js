@@ -46,7 +46,7 @@ export const state = () => {
                 sublistTitle: '福利',
                 list: [
                     {
-                        text: '妹子十二',
+                        text: 'Gank妹子',
                         icon: 'volume_off',
                         route: '/fuli'
                     }
