@@ -12,7 +12,7 @@
         <div class="toggle" @click="changeClass">切</div>
         <div class="content" :class="{size1: classIndex==1,size2: classIndex==2,size3: classIndex==3}">
             
-            <div class="items" v-for="(item, index) in gank" :key="index" @click="$router.push({name:'fuliDetail', query: {url: item}})">
+            <div class="items" v-for="(item, index) in gank" :key="index" @click="$router.push({name:'fuliDetail', params: {list: gank, index}})">
                 <div class="rect-100">
                     <div class="_full">
                         <img :src="item" />
@@ -77,6 +77,7 @@ export default {
 border-radius: 2em;}
 .content{margin-right:-2%;height: 100%;overflow:scroll;}
 .content .items{float: left;width:23%;margin-right:2%;margin-bottom: 2%;}
+.content .items ._full{background:#dcdcdc;}
 .content .items img{width:100%;}
 .content.size2 .items{width:48%;}
 .content.size3 .items{width:98%;}

@@ -1,8 +1,21 @@
 <template>
     <div>
-        <div class="detail-wrapper" v-if="url">
-            <img :src="url" />
-        </div>
+        <v-carousel class="detail-wrapper" v-if="list && list.length"
+            height="100%"
+            :value="index"
+            :interval="1e4"
+            :continuous="false"
+            :mandatory="false"
+            hide-controls
+            hide-delimiters
+        >
+            <v-carousel-item
+            v-for="(src,i) in list"
+            :key="i"
+            :src="src"
+            :value="i"
+            ></v-carousel-item>
+        </v-carousel>
     </div>
 </template>
 
@@ -18,11 +31,14 @@ export default {
     },
     data() {
         return {
-            url: null
+            list: null,
+            index: 0
         }
     },
     created() {
-        this.url = this.$route.query.url
+        this.list = this.$route.params.list;
+        this.index = this.$route.params.index;
+
         this.$store.dispatch('appShell/appHeader/setAppHeader', {
             show: false
         })

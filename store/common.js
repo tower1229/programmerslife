@@ -32,7 +32,7 @@ export const actions = {
             //         commit('setGank', imgList);
             //     }
             // });
-            axios.get(`http://gank.io/api/data/福利/24/1`).then(res => {
+            axios.get(`https://gank.io/api/data/福利/24/1`).then(res => {
                 let response = res.data.results;
                 if(Array.isArray(response)){
                     let imgList = [];
