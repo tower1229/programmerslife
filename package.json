@@ -33,7 +33,7 @@
         "stoppable": "^1.1.0",
         "vuetify": "^1.5.14",
         "iscroll": "5.2.0",
-        "axios": "^0.18.0"
+        "axios": "^0.21.1"
     },
     "devDependencies": {
         "autoprefixer": "^7.2.5",
